@@ -81,13 +81,14 @@ This project is make in Laravel 6.x, then you must comply the server requirement
 Install the project
 Then the steps to start the project:
 
-Clone this repo.
-Enter the folder where you cloned the project.
-Execute this command: composer install.
-Create a datebase in MySQL.
-Config the **.env ** file .
-Create a .env file if not exists in the proyect root.
-This is a example of .env file, change the data of your database.
+1. Clone this repo.
+2. Enter the folder where you cloned the project.
+3. Execute this command: composer install.
+4. Create a datebase in MySQL.
+5. Config the **.env ** file .
+    - Create a .env file if not exists in the proyect root.
+    - This is a example of .env file, change the data of your database.
+    
 APP_NAME=MyCompany
 APP_ENV=local
 APP_KEY=
@@ -102,12 +103,16 @@ DB_PORT=3306
 DB_DATABASE=your_database_name
 DB_USERNAME=user_of_database
 DB_PASSWORD=password_of_database
-Execute these commands (in the project root):
-php artisan key:generate
-php artisan config:cache
-Now execute the migrations: php artisan migrate
-Add mailgun settings in .env file:
-At the end of the file paste this (Change data of MAILGUN_DOMAIN and MAILGUN_SECRET for your data):
+
+
+6. Execute these commands (in the project root):
+    - php artisan key:generate
+    - php artisan config:cache
+7. Now execute the migrations: php artisan migrate
+8. Add mailgun settings in .env file:
+    - At the end of the file paste this (Change data of MAILGUN_DOMAIN and MAILGUN_SECRET for your data):
+    
+    
 MAIL_DRIVER=mailgun
 MAIL_HOST=smtp.mailgun.org
 MAIL_PORT=587
@@ -117,10 +122,11 @@ MAIL_ENCRYPTION=tls
 
 MAILGUN_DOMAIN=your_mailgun_domain
 MAILGUN_SECRET=your_password
-Execute this command php artisan config:cache
-Execute this command composer dump-autoload
-Initialize seeder of the Admin User: php artisan db:seed
-Execute this command npm run dev
-Execute this command php artisan storage:link
-Now you can serve the application with php artisan serve
-That's it
+
+9. Execute this command php artisan config:cache
+10. Execute this command composer dump-autoload
+11. Initialize seeder of the Admin User: php artisan db:seed
+12. Execute this command npm run dev
+13. Execute this command php artisan storage:link
+14. Now you can serve the application with php artisan serve
+15. That's it
