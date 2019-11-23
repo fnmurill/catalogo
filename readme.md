@@ -89,20 +89,20 @@ Then the steps to start the project:
     - Create a .env file if not exists in the proyect root.
     - This is a example of .env file, change the data of your database.
     
-APP_NAME=MyCompany
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=http://localhost
+    APP_NAME= Catalogo
+    APP_ENV=local
+    APP_KEY=
+    APP_DEBUG=true
+    APP_URL=http://localhost
 
-LOG_CHANNEL=stack
+    LOG_CHANNEL=stack
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=user_of_database
-DB_PASSWORD=password_of_database
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=user_of_database
+    DB_PASSWORD=password_of_database
 
 
 6. Execute these commands (in the project root):
@@ -113,15 +113,15 @@ DB_PASSWORD=password_of_database
     - At the end of the file paste this (Change data of MAILGUN_DOMAIN and MAILGUN_SECRET for your data):
     
     
-MAIL_DRIVER=mailgun
-MAIL_HOST=smtp.mailgun.org
-MAIL_PORT=587
-MAIL_USERNAME=
-MAIL_PASSWORD=
-MAIL_ENCRYPTION=tls
+    MAIL_DRIVER=mailgun
+    MAIL_HOST=smtp.mailgun.org
+    MAIL_PORT=587
+    MAIL_USERNAME=
+    MAIL_PASSWORD=
+    MAIL_ENCRYPTION=tls
 
-MAILGUN_DOMAIN=your_mailgun_domain
-MAILGUN_SECRET=your_password
+    MAILGUN_DOMAIN=your_mailgun_domain
+    MAILGUN_SECRET=your_password
 
 9. Execute this command php artisan config:cache
 10. Execute this command composer dump-autoload
